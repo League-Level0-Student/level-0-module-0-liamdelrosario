@@ -11,14 +11,20 @@ public class PentagonCrazy {
 	
 	public static void main(String[] args) {
 		
+		Robot bob = new Robot();
+		
+		bob.penDown();
+		
 		//  Create a new Robot
 
 		//  Put the robot's pen down
 
 		//  SPEED. Make the robot go at maximum speed (100)
-
+		bob.setSpeed(100);
+		int count = 0;
+		
 		//  COLOR. Set the pen to a color that you like for the shape
-
+		
 		//  NUMBER OF SIDES. Make an int variable for the number of sides the shape will have.
 		//  				(Hint: its called PentagonCrazy)
 
