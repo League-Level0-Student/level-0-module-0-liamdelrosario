@@ -20,9 +20,15 @@ public class PentagonCrazy {
 		//  Put the robot's pen down
 
 		//  SPEED. Make the robot go at maximum speed (100)
-		bob.setSpeed(100);
+		bob.setSpeed(200);
 		int count = 0;
-		
+		while ( count < 200 ) {
+			bob.setRandomPenColor();
+			bob.move(count);
+			bob.turn(72+1);
+			count += 1;
+		}
+		bob.hide();
 		//  COLOR. Set the pen to a color that you like for the shape
 		
 		//  NUMBER OF SIDES. Make an int variable for the number of sides the shape will have.
