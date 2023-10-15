@@ -1,3 +1,4 @@
+
 package _03_print_and_popups._5_awesome_or_not;
 
 import java.util.Random;
@@ -25,19 +26,19 @@ public class AwesomeOrNot {
 			JOptionPane.showMessageDialog(null, "your "+input+ " is awesome");
 		}
 		// -- tell the user whatever they entered is awesome!
-		String inputg = JOptionPane.showInputDialog("what do you think is awesome.");
+		//String inputg = JOptionPane.showInputDialog("what do you think is awesome.");
 		if(randNum == (1)) {
-			JOptionPane.showMessageDialog(null, "your "+inputg+ " ok");
+			JOptionPane.showMessageDialog(null, "your "+input+ " ok");
 		}
 		// 6. If your variable is 1
-		String inputgg = JOptionPane.showInputDialog("what do you think is awesome.");
+		//String inputgg = JOptionPane.showInputDialog("what do you think is awesome.");
 		if(randNum == (2)) {
-			JOptionPane.showMessageDialog(null, "your "+inputgg+ " boring");
+			JOptionPane.showMessageDialog(null, "your "+input+ " boring");
 		}
 		// -- tell the user whatever they entered is ok.
-		String inputggg = JOptionPane.showInputDialog("what do you think is awesome.");
+		//String inputggg = JOptionPane.showInputDialog("what do you think is awesome.");
 		if(randNum == (3)) {
-			JOptionPane.showMessageDialog(null, "your "+inputggg+ " be nice");
+			JOptionPane.showMessageDialog(null, "your "+input+ " i do think you should be nice right?");
 		}
 		// 7. If your variable is 2
 
