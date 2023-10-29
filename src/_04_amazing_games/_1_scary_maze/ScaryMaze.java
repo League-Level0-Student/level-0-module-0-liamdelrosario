@@ -87,7 +87,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		scare();
 		}
 		if(mouseColor==goodIDK) {
-			
+			System.out.println("YOU WON!!!!!");
 		}
 		
 		
@@ -116,7 +116,10 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 			//    You can find a sound on freesound.org. Log in as leagueofamazing/code4life.		
 			//11. Play the scary sound. Hint: use the playScarySound method with the name of your sound file		
 
-			
+			playScarySound("standardScarySound.wav");
+			showScaryImage("scarysduh.jpeg");
+			frame.pack();
+			started=false;
 		}	
 		/**********  SHOW A PICTURE ***************/
 
@@ -160,10 +163,10 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 	public static void main(String[] args) throws Exception {
 		SwingUtilities.invokeLater(new ScaryMaze());
 	}
-
+	JFrame frame = new JFrame("Scary Maze");
 	@Override
 	public void run() {
-		JFrame frame = new JFrame("Scary Maze");
+		
 		frame.add(this);
 		setPreferredSize(new Dimension(frameWidth, frameHeight));
 		frame.pack();

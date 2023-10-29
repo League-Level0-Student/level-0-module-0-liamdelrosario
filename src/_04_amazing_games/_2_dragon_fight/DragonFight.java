@@ -11,22 +11,23 @@ public class DragonFight {
 		Random ran = new Random();    //This will be used later to make random numbers. 
 
 		ImageIcon dragon = new ImageIcon("src/_04_amazing_games/_2_dragon_fight/dragonPicture.jpg");
-		JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "Dragon Fighter", 0, dragon);
+	JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "Dragon Fighter", 0, dragon);
 
 		// 1. Create some variables to hold health levels
 		
-			// playerHealth to store your health - set it equal to 100
+			// playerHealth to store your health - set it equal to 100					
+		int playerHealth = 100;
 	
 			// dragonHealth to store the dragon's health - set it equal to 100
-
+		int dragonHealth = 100;
 		// 2. Create some variables to hold the attack strengths. These will be given different values later. 
 		
 			// playerAttack to store the damage the player's attack will do - set it equal
 			// to 0 for now.
-	
+	int playerAttack =-0;
 			// dragonAttack to store the damage the dragon's attack will do - set it equal
 			// to 0 for now.
-
+	int dragonAttack =-0;
 		
 		//  This while statement will cause the game attack code to repeat
 		while (true) {
@@ -35,9 +36,8 @@ public class DragonFight {
 
 				// 3. Ask the player in a pop-up if they want to attack the dragon with a yell
 				// or a kick
-	
 				// 4. If they typed in "yell":
-	
+			JOptionPane.showInputDialog("Would you rather yell or kick");
 					  // -- Find a random number between 0 and 10 and store it in playerAttack. Use
 					  // ran.nextInt(10)
 			
