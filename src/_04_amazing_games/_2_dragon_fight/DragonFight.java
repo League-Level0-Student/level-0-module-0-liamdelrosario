@@ -91,8 +91,8 @@ public class DragonFight {
 			
 				// 11.  Pop up a message that tells us how much health the player and
 				// 		dragon have left.
-		JOptionPane.showMessageDialog(null,dragonHealth);
-		JOptionPane.showMessageDialog(null,playerHealth);
+		JOptionPane.showMessageDialog(null,"dragon health is "+dragonHealth);
+		JOptionPane.showMessageDialog(null,"player health is "+playerHealth);
 			
 			// (Bonus: Also display the amount of health that was lost by each in this
 			// round)
@@ -104,14 +104,14 @@ public class DragonFight {
 
 	static void playerLost() {
 		// 11. Tell the player that they have been defeated by the dragon and have no treasure
-
+		JOptionPane.showMessageDialog(null,"welp you lost no treasure");
 
 		System.exit(0);   //This code ends the program
 	}
 
 	static void dragonLost() {
 		// 12. Tell the user that the dragon has been defeated and they get a ton of gold!
-
+		JOptionPane.showMessageDialog(null,"hey you got 1 millon dollars");
 		System.exit(0);   //This code ends the program
 	}
 
